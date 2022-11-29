@@ -1,0 +1,74 @@
+body {
+  font-size: 2em;
+  color: rgb(190, 1, 227);
+  padding: 20px;
+  margin: none;
+  background-image: url(Assets/dragonball1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-weight: bolder;
+}
+
+main {
+  display: grid;
+  grid-template-areas:
+    "player  cpu"
+    "hand  stats";
+  grid-template-rows: auto auto;
+  grid-template-columns: auto auto;
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+}
+
+img {
+  width: 250px;
+  height: 250px;
+  border-radius: 75%;
+  border: 2px solid rgb(190, 1, 227);
+}
+
+h2 {
+  text-align: left;
+  font-size: 1.75em;
+  margin: 30px;
+}
+
+h1 {
+  font-size: 120px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+  font-weight: 600px;
+  color: transparent;
+  letter-spacing: -0.015;
+  background-image: linear-gradient(180deg, rgb(254, 5, 5), rgb(251, 255, 0));
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+p {
+  font-size: 1.5em;
+}
+
+.player {
+  margin-right: 30%;
+  font-size: 1.5em;
+  padding: 20px;
+}
+
+.cpu {
+  font-size: 1.5em;
+  padding: 20px;
+}
+
+.hand {
+  font-size: 1.2em;
+  padding: 20px;
+}
+
+.stats {
+  font-size: 1.2em;
+  padding-left: 100px;
+  margin-left: 100px;
+  text-align: start;
+}
