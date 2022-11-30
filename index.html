@@ -21,23 +21,30 @@
         <h3>CPU</h3>
         <img src="Assets/cpu.jpg" alt="cpu" />
       </div>
-      <p>Winner:</p>
-      <br />
-      <div class="hand">
-        <p>Select your hand</p>
-        <img src="Assets/rock.jpg" alt="rock" />
-        <img src="Assets/paper.jpg" alt="paper" />
-        <img src="Assets/scissors.jpg" alt="scissors" />
+      <div id="result">
+        <img src="Assets/rock.jpg" id="userimg">
+        <h4 id="resultgame"><h4>
+        <img src="Assets/rock.jpg" id="machineimg">
+        </div>
+        <div class="hand">
+          <h3>Select your hand</h3>
+        <button id="rock" type="button"><img src="Assets/rock.jpg" /></button>
+        <button id="paper" type="button"><img src="Assets/paper.jpg" /></button>
+        <button id="scissors" type="button">
+          <img src="Assets/scissors.jpg" />
+        </button>
       </div>
       <div class="stats">
         <h2>Statics</h2>
-        <ul>
-          <li>Games:</li>
-          <li>Wins:</li>
-          <li>Loses:</li>
-          <li>Ties:</li>
-        </ul>
+          <p id="games">Games:</p>
+          <p id="wins">Wins:</p>
+          <p id="loses">Loses:</p>
+          <p id="ties">Ties:</p>
+        
+        <br />
+        <input type="button" value="Reset" id="button" />
       </div>
     </main>
   </body>
+  <script src="script.js"></script>
 </html>
