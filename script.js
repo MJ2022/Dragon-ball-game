@@ -12,6 +12,9 @@ const resultGame= document.getElementById("resultgame");
 const userImg= document.getElementById("userimg");
 const machineImg= document.getElementById("machineimg");
 
+let resetBtn= document.getElementById("button");
+resetBtn.addEventListener("click",resetScore)
+
 let rockBtn = document.getElementById("rock");
     rockBtn.addEventListener('click',()=>{
         play(ROCK)
@@ -106,6 +109,15 @@ function updateStats(totalMatch,totalWin,totalLost,totalDraw) {
     Win.textContent= "Wins: " + totalWin;
     Loses.textContent= "Loses: " + totalLost;
     Ties.textContent= "Ties: " + totalDraw;
+}
+
+function resetScore() {
+	totalMatch = 0;
+	totalWin = 0;
+	totalLost = 0;
+	totalDraw = 0;
+    resultGame.innerHTML=""
+	updateStats(totalMatch, totalWin, totalLost, totalDraw);
 }
 
 
